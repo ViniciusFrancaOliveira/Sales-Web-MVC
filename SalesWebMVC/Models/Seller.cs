@@ -18,7 +18,7 @@ namespace SalesWebMVC.Models
         { 
         }
 
-        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department, ICollection<SalesRecord> salesRecord)
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department)
         {
             Id = id;
             Name = name;
@@ -26,7 +26,6 @@ namespace SalesWebMVC.Models
             BirthDate = birthDate;
             BaseSalary = baseSalary;
             Department = department;
-            Sales = salesRecord;
         }
 
         public void AddSales(SalesRecord sale)
